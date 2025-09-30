@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соколова ІА-31 ЛР-2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .my-table {
+            width: 750px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 20px;
+        }
+        
+        .my-table td {
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .my-table .row1 {
+            background-color: #558f8f;
+            color: #DB7A3D;
+            height: 40px;
+        }
+        
+        .my-table .row2 {
+            background-color: #f5f555;
+            color: #903DE6; 
+            height: 25px;
+        }
+
+        .my-table .row3 {
+            background-color: #ffffff;
+            color: #333333;
+            height: 5px;
+        }
+        
+        .my-table .col1 {
+            width: 25%;
+        }
+        
+        .my-table .col2 {
+            width: 25%;
+        }
+        
+        .my-table .col3 {
+            width: 50%;
+        }
+        
+        .my-table tr:first-child:hover .row1 {
+            background-color: #f5f555;
+            color: #903DE6;
+        }
+        
+        .my-table tr:nth-child(2):hover .row2 {
+            background-color: #558f8f;
+            color: #DB7A3D;
+        }
+        
+        .my-table tr:nth-child(2):hover td table td {
+            background-color: #558f8f !important;
+            color: #DB7A3D !important;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <table class="my-table">
+        <!-- Перший рядок -->
+        <tr>
+            <td class="row1 col1">Соколова</td>
+            <td class="row1 col2">Поліна</td>
+            <td class="row1 col3">Сергіївна</td>
+        </tr>
+        <!-- Другий рядок -->
+        <tr>
+            <td class="row2 col1">ІА-31</td>
+            <td class="row2 col2" style="padding: 0;">
+                <!-- Поділена комірка вертикально-->
+                <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="subcell" style="border: none; border-right: 2px solid #333; background-color: #f5f555; color: #903DE6; width: 50%;">ЛР-2</td>
+                        <td style="border: none; padding: 0;">
+                            <!-- Права частина поділена горизонтально -->
+                            <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <td class="subcell" style="border: none; border-bottom: 2px solid #333; background-color: #f5f555; color: #903DE6; height: 50%;"></td>
+                                </tr>
+                                <tr>
+                                    <td class="subcell" style="border: none; background-color: #f5f555; color: #903DE6; height: 50%;"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="row2 col3">Варіант №5</td>
+        </tr>
+        <!-- Третій рядок -->
+        <tr>
+            <td class="row3 col1"></td>
+            <td class="row3 col2"></td>
+            <td class="row3 col3"></td>
+        </tr>
+    </table>
+
+    <div class="circles-position">
+        <div class="method-title">Position метод</div>
+        <div class="circle circle-red-pos"></div>
+        <div class="circle circle-blue-pos"></div>
+        <div class="circle circle-green-pos"></div>
+    </div>
+
+    <div class="circles-transform">
+        <div class="method-title">Transform метод</div>
+        <div class="circle circle-red-trans"></div>
+        <div class="circle circle-blue-trans"></div>
+        <div class="circle circle-green-trans"></div>
+    </div>
+    
+</body>
+</html>
