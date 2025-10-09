@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соколова ІА-31 ЛР-5 В-5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Форма для заповнення</h2>
+            
+            <form id="dataForm">
+                <input type="text" id="pib" name="pib" placeholder="ПІБ">
+                <span class="error"></span>
+
+                <input type="text" id="faculty" name="faculty" placeholder="Факультет">
+                <span class="error"></span>
+
+                <input type="text" id="birthdate" name="birthdate" placeholder="Дата народження">
+                <span class="error"></span>
+
+                <input type="text" id="address" name="address" placeholder="Адреса">
+                <span class="error"></span>
+
+                <input type="text" id="email" name="email" placeholder="Пошта">
+                <span class="error"></span>
+
+                <button type="submit">Підтвердити</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <h2>Введені дані</h2>
+            <div class="info-content" id="infoData">
+                <p class="placeholder">Заповніть форму</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <div class="color-picker-wrapper">
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+        <table id="mainTable"></table>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
