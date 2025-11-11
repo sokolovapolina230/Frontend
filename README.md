@@ -4,4 +4,3 @@
 - [Лабораторна робота 4](https://sokolovapolina230.github.io/Frontend/lab4/)
 - [Лабораторна робота 5](https://sokolovapolina230.github.io/Frontend/lab5/)
 - [Лабораторна робота 6](https://sokolovapolina230.github.io/Frontend/lab6/)
-- [Лабораторна робота 7](https://sokolovapolina230.github.io/Frontend/lab7/)
